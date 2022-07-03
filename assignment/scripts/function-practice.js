@@ -10,7 +10,7 @@ function hello() {
   return 'Hello World!';
 }
 // Call the function to test
-
+hello();
 console.log('Test - should say "Hello World!"', hello());
 
 
@@ -21,7 +21,7 @@ function helloName( name ) {
   return 'Hello, Josh!';
 }
 // Remember to call the function to test
-
+helloName();
 console.log('Testing - code should be talking back to me...', helloName ());
 
 // 3. Function to add two numbers together & return the result
@@ -39,26 +39,34 @@ function multiplyThree( num0, num1, num2){
   return answer;
 }
 
+multiplyThree();
 console.log('More math workouts! What is 15 times 23 times 8?', multiplyThree (15,23,8));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
+  console.log('We are looking for positive numbers here...');
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+  else{
+
+    return false;
+  }
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+isPositive();
+console.log( '3 is greater than 0 and remains a poistive number', isPositive(3) );
+console.log( '0 is greater than 0 and remains a poistive number', isPositive(0) );
+console.log( '-3 is greater than 0 and remains a poistive number', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+let listedItems = []
 function getLast( array ) {
+  
 
 }
 
