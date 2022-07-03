@@ -6,11 +6,9 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  console.log('Hello World!');
   return 'Hello World!';
 }
 // Call the function to test
-hello();
 console.log('Test - should say "Hello World!"', hello());
 
 
@@ -64,18 +62,29 @@ console.log( '-3 is greater than 0 and remains a poistive number', isPositive(-3
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-let listedItems = []
+let randos = ['5', '89', '170', '14'];
 function getLast( array ) {
-  
+  let rando = randos[randos.length - 1];
+  return rando
 
 }
 
+getLast();
+console.log('What is the last item in the array?', getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for(let n = 0; n<array.length; n++){
+    console.log('Looking for value 170', array [n]);
+    if (array [n] === value){
+      return true;
+    }
+  }
+  return false;
 }
+
+console.log(find ('170', randos));
 
 // ----------------------
 // Stretch Goals
