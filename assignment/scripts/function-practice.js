@@ -9,6 +9,7 @@ function hello() {
   return 'Hello World!';
 }
 // Call the function to test
+hello();
 console.log('Test - should say "Hello World!"', hello());
 
 
